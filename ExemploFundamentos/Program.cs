@@ -1,6 +1,8 @@
 ﻿using System;
 using ExemploFundamentos.Models;
 
+#region Operadores de Atribuição
+
 //string a = "15=";
 //int b = 0;
 //int.TryParse(a, out b);  // Se a variavel a ser convertido com sucesso, imprimi normalmente se falar, a saida será a variavel b.
@@ -59,3 +61,83 @@ using ExemploFundamentos.Models;
 //pessoa1.Idade = 32;
 //pessoa1.Apresentar();
 
+#endregion
+
+#region Operadores Condicionais
+
+//Console.WriteLine("Digite uma letra");
+//string letra = Console.ReadLine();
+
+//switch (letra)
+//{
+//    case "a":
+//    case "e":
+//    case "i":
+//    case "o":
+//    case "u":
+//        Console.WriteLine("Vogal");
+//        break;
+//    default:
+//        Console.WriteLine("Não é uma vogal");
+//        break;
+//}
+
+
+//int quantidadeEmEstoque = 10;
+//int quantidadeCompra = 0;
+//bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
+//Console.WriteLine($"Quantidade em estoque {quantidadeEmEstoque}");
+//Console.WriteLine($"Quantidade compra {quantidadeCompra}");
+//Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
+//if (quantidadeCompra == 0)
+//{
+//    Console.WriteLine("Venda inválida.");
+//}
+//else if (possivelVenda)
+//{
+//    Console.WriteLine("Venda realizada!");
+//}
+//else
+//{
+//    Console.WriteLine("Desculpe não temos a quantidade desejada em estoque!");
+//}
+
+#endregion
+
+#region Operadores Lógicos
+
+//bool presencaMinima = true;
+//double media = 5;
+
+//if (presencaMinima && media >= 7)
+//{
+//    Console.WriteLine("Aluno Aprovado");
+//}
+//else
+//{
+//    Console.WriteLine("Aluno Reprovado");
+//}
+
+//bool ehMaiorDeIdade = false;
+//bool possuiAutorizacaoDoResponsavel = true;
+//if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
+//{
+//    Console.WriteLine("Entrada Liberada!");
+//}
+//else
+//{
+//    Console.WriteLine("Entrada não Liberada!");
+//}
+
+//bool choveu = false;
+//bool estaTarde = false;
+//if (!choveu && !estaTarde)
+//{
+//    Console.WriteLine("Vou pedalar.");
+//}
+//else
+//{
+//    Console.WriteLine("Vou pedalar um outro dia.");
+//}
+
+#endregion
