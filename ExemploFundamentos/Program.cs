@@ -141,3 +141,97 @@ using ExemploFundamentos.Models;
 //}
 
 #endregion
+
+#region Calculadora
+
+//Calculadora calc = new Calculadora();
+//calc.Somar(2, 5);
+//calc.Subtrair(10, 5);
+//calc.Multiplicar(9, 8);
+//calc.Dividir(10, 10);
+//calc.Potencia(3, 3);
+//calc.Coseno(30);
+//calc.Seno(30);
+//calc.Tangente(30);
+
+//int numeroIncremento = 10;
+//int numeroDecremento = 10;
+//Console.WriteLine("Incrementando e Decrementando o 10");
+//numeroIncremento++;
+//numeroDecremento--;
+//Console.WriteLine("Incrementando " + numeroIncremento);
+//Console.WriteLine("Decrementando " + numeroDecremento);
+
+//calc.RaizQuadrada(81);
+
+#endregion
+
+#region Estrutura de Repetição
+
+//int numero = 5;
+//for (int contador = 0; contador <= 10; contador++)
+//{
+//    Console.WriteLine($"{numero} x {contador} = {numero * contador} ");
+//}
+
+//int numero = 6;
+//int contador = 1;
+//while (contador <= 10)
+//{
+//    Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador} ");
+//    contador++;   
+//    if ( contador == 6 )
+//    {
+//        break;
+//    }
+//}
+
+//int soma = 0, numero = 0;
+//do
+//{
+//    Console.WriteLine("Digite um número (0 para parar): ");
+//    numero = Convert.ToInt32(Console.ReadLine());
+//    soma += numero;
+
+//} while (numero != 0);
+//Console.WriteLine($"Total da soma dos números digitados é: {soma}");
+
+string opcao;
+bool exibirMenu = true;
+
+while (exibirMenu)
+{
+    Console.Clear();
+    Console.WriteLine("Digite a sua opção: ");
+    Console.WriteLine("1 - Cadastras Cliente");
+    Console.WriteLine("2 - Buscar Cliente");
+    Console.WriteLine("3 - Apagar Cliente");
+    Console.WriteLine("4 - Encerrar");
+
+    opcao = Console.ReadLine();
+
+    switch(opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+        case "2":
+            Console.WriteLine("Busca de cliente");
+            break;
+        case "3":
+            Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            Console.WriteLine("Encerrar");
+            exibirMenu = false;
+            //Environment.Exit(0); //Sair de vez do programa
+            break;
+        default:
+            Console.WriteLine("Opção Invalida");
+            break;
+    }
+}
+
+Console.WriteLine("O programa se encerrou");
+
+#endregion
